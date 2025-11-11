@@ -1,24 +1,21 @@
 # ALTO to TEI
 
-This repository contains a Python script to convert ALTO XML files into TEI XML format. The conversion process extracts text content from ALTO files.
-TEI elements such as `<teiHeader>`, `<text>`, `<body>`, and `<p>` are created to structure the output TEI document.
-
+This repository contains a Python script to convert [ALTO XML](https://loc.gov/standards/alto/) files into [TEI XML format](https://tei-c.org/guidelines/p5/). The conversion process extracts text content from ALTO files and maps it to the appropriate TEI structure: 
 * TextBlocks in ALTO files are mapped to TEI divisions (`<div>`), with their content preserved.
 * TextLine elements are represented using `<lb/>` tags to indicate line breaks.
 
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.9 or higher
 - lxml library
 - Install dependencies using `pip install -r requirements.txt` 
 - Jupyter Notebook (for running the provided notebook)
 
 
-
 ## Example
 
-An example ALTO file is provided in the `data/sample` directory. You can use this file to test the conversion process.
+An example [ALTO file](data/sample/X0000041.xml) is provided in the `data/sample` directory. You can use this file to test the conversion process.
 
 
 ## Usage
